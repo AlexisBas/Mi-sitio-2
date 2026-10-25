@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h2>Formularios</h2>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="sobre-mi.html">Sobre mí</a> |
+        <a href="pasatiempos.html">Pasatiempos</a> |
+        <a href="multimedia.html">Multimedia</a>
+    </nav>
+
+    <h1>Formulario personal</h1>
+
+    <p>Completa el siguiente formulario para conocer tus datos e intereses.</p>
+    <form action="#" method="post">
+
+        <h2>Datos personales</h2>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" name="nombre" id="nombre"
+               placeholder="Ingrese su nombre"
+               minlength="3" maxlength="50" required>
+        <br><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo" id="correo"
+               placeholder="ejemplo@correo.com" required>
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad"
+               min="18" max="100"
+               placeholder="Ingrese su edad" required>
+        <br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" name="fecha" id="fecha" required>
+
+        <h2>Tus intereses</h2>
+
+        <p>Selecciona tus pasatiempos favoritos:</p>
+
+        <input type="checkbox" name="intereses" id="musica" value="musica">
+        <label for="musica">Escuchar música</label>
+        <br>
+
+        <input type="checkbox" name="intereses" id="deportes" value="deportes">
+        <label for="deportes">Practicar deportes</label>
+        <br>
+
+        <input type="checkbox" name="intereses" id="videojuegos" value="videojuegos">
+        <label for="videojuegos">Jugar videojuegos</label>
+        <br>
+
+        <input type="checkbox" name="intereses" id="tecnologia" value="tecnologia">
+        <label for="tecnologia">Tecnología y programación</label>
+
+        <h2>¿Con qué frecuencia usas Internet?</h2>
+        <input type="radio" name="frecuencia" id="diario" value="diario" required>
+        <label for="diario">Todos los días</label>
+        <br>
+        <input type="radio" name="frecuencia" id="semanal" value="semanal">
+        <label for="semanal">Algunas veces por semana</label>
+        <br>
+        <input type="radio" name="frecuencia" id="rara_vez" value="rara_vez">
+        <label for="rara_vez">Rara vez</label>
+
+        <h2>Nivel de estudios</h2>
+        <label for="estudios">Selecciona tu nivel de estudios:</label>
+        <br>
+        <select name="estudios" id="estudios" required>
+            <option value="">Seleccione una opción</option>
+            <option value="colegio">Colegio</option>
+            <option value="bachillerato">Bachillerato</option>
+            <option value="universidad">Universidad</option>
+            <option value="graduado">Graduado</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <h2>Comentarios</h2>
+
+        <label for="comentarios">Cuéntanos sobre tus intereses:</label>
+        <br>
+
+        <textarea name="comentarios" id="comentarios"
+                  rows="5" cols="40"
+                  placeholder="Escribe tus comentarios aquí..."
+                  minlength="5" maxlength="300"></textarea>
+
+        <br><br>
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Limpiar campos</button>
+    </form>
+    <hr>
+
+
+</body>
+</html>
